@@ -8,5 +8,5 @@ import io.micronaut.data.repository.CrudRepository;
 @JdbcRepository(dialect = Dialect.MYSQL)
 public interface FooRepository extends CrudRepository<Foo, Long> {
 
-   // void update(@Id Long id, String name);
+    void update(@Id Long id, String name);
 }
